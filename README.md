@@ -40,23 +40,23 @@ This ~ooo~
 ### Technologies 🧰
 <hr>
 
-  - [flip.js](https://google.com)
-  - [flop.js](https://google.com)
-  - [flap.js](https://google.com)
+  - [Play Framework](https://www.playframework.com/)
+  - [SBT](https://www.scala-sbt.org/)
+  - [OpenJDK](https://openjdk.java.net/)
 
 <br />
 
 ### Contribute 🤝
 <hr>
 
-~ooo~
+This project is more a <abbr title="Proof of Concept">POC</abbr> than anything else, and may still be an ongoing development, thus will gladly welcome <abbr title="Pull Requests">PR</abbr>'s for advice if you're familiar with *Play Framework* or *Scala* in general, though will likely not use this for a production instance.
 
 <br />
 
 ### Acknowledgements 💙
 <hr>
 
-~ooo~
+Thanks to *Katie Casemento* of *Portland State University* for offering guidance and advice throughout the **CS-557 Functional Programming** course. Hands on development with *Scala* in a user-focused setting was indeed a refreshing project.
 
 <br />
 
@@ -67,7 +67,7 @@ This ~ooo~
 
 <!-- badge cluster -->
 
-[~ooo~](https://shields.io/)
+![GitHub language count](https://img.shields.io/github/languages/count/anthonybench/ScalaAPI) ![GitHub top language](https://img.shields.io/github/languages/top/anthonybench/ScalaAPI) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anthonybench/ScalaAPI) ![GitHub](https://img.shields.io/github/license/anthonybench/ScalaAPI)
 
 <!-- / -->
 See [License](https://google.com) for the full license text.
