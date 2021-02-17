@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Tue Feb 16 20:51:29 PST 2021
+// @DATE:Tue Feb 16 20:56:11 PST 2021
 
 package router
 
@@ -14,28 +14,24 @@ import _root_.controllers.Assets.Asset
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
   // @LINE:7
-  HomeController_2: controllers.HomeController,
+  HomeController_1: controllers.HomeController,
   // @LINE:13
   Assets_0: controllers.Assets,
-  // @LINE:17
-  TodoListController_1: controllers.TodoListController,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
     // @LINE:7
-    HomeController_2: controllers.HomeController,
+    HomeController_1: controllers.HomeController,
     // @LINE:13
-    Assets_0: controllers.Assets,
-    // @LINE:17
-    TodoListController_1: controllers.TodoListController
-  ) = this(errorHandler, HomeController_2, Assets_0, TodoListController_1, "/")
+    Assets_0: controllers.Assets
+  ) = this(errorHandler, HomeController_1, Assets_0, "/")
 
   def withPrefix(addPrefix: String): Routes = {
     val prefix = play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
     router.RoutesPrefix.setPrefix(prefix)
-    new Routes(errorHandler, HomeController_2, Assets_0, TodoListController_1, prefix)
+    new Routes(errorHandler, HomeController_1, Assets_0, prefix)
   }
 
   private[this] val defaultPrefix: String = {
@@ -47,7 +43,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """explore""", """controllers.HomeController.explore"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """tutorial""", """controllers.HomeController.tutorial"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """todo""", """controllers.TodoListController.getAll"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """todo""", """controllers.HomeController.getAll"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -60,7 +56,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_2.index,
+    HomeController_1.index,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -78,7 +74,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("explore")))
   )
   private[this] lazy val controllers_HomeController_explore1_invoker = createInvoker(
-    HomeController_2.explore,
+    HomeController_1.explore,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -96,7 +92,7 @@ class Routes(
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("tutorial")))
   )
   private[this] lazy val controllers_HomeController_tutorial2_invoker = createInvoker(
-    HomeController_2.tutorial,
+    HomeController_1.tutorial,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
@@ -128,14 +124,14 @@ class Routes(
   )
 
   // @LINE:17
-  private[this] lazy val controllers_TodoListController_getAll4_route = Route("GET",
+  private[this] lazy val controllers_HomeController_getAll4_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("todo")))
   )
-  private[this] lazy val controllers_TodoListController_getAll4_invoker = createInvoker(
-    TodoListController_1.getAll,
+  private[this] lazy val controllers_HomeController_getAll4_invoker = createInvoker(
+    HomeController_1.getAll,
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
-      "controllers.TodoListController",
+      "controllers.HomeController",
       "getAll",
       Nil,
       "GET",
@@ -151,19 +147,19 @@ class Routes(
     // @LINE:7
     case controllers_HomeController_index0_route(params@_) =>
       call { 
-        controllers_HomeController_index0_invoker.call(HomeController_2.index)
+        controllers_HomeController_index0_invoker.call(HomeController_1.index)
       }
   
     // @LINE:8
     case controllers_HomeController_explore1_route(params@_) =>
       call { 
-        controllers_HomeController_explore1_invoker.call(HomeController_2.explore)
+        controllers_HomeController_explore1_invoker.call(HomeController_1.explore)
       }
   
     // @LINE:9
     case controllers_HomeController_tutorial2_route(params@_) =>
       call { 
-        controllers_HomeController_tutorial2_invoker.call(HomeController_2.tutorial)
+        controllers_HomeController_tutorial2_invoker.call(HomeController_1.tutorial)
       }
   
     // @LINE:13
@@ -173,9 +169,9 @@ class Routes(
       }
   
     // @LINE:17
-    case controllers_TodoListController_getAll4_route(params@_) =>
+    case controllers_HomeController_getAll4_route(params@_) =>
       call { 
-        controllers_TodoListController_getAll4_invoker.call(TodoListController_1.getAll)
+        controllers_HomeController_getAll4_invoker.call(HomeController_1.getAll)
       }
   }
 }
