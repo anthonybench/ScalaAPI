@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes:17:1: type TodoListController is not a member of package controllers[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /todo                       controllers.TodoListController.getAll[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes:17:1: type TodoListController is not a member of package controllers[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /todo                       controllers.TodoListController.getAll[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

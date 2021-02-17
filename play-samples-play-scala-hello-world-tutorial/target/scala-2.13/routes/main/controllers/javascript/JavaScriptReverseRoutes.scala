@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Sun Jan 31 21:58:07 PST 2021
+// @DATE:Tue Feb 16 20:51:29 PST 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -9,6 +9,26 @@ import _root_.controllers.Assets.Asset
 
 // @LINE:7
 package controllers.javascript {
+
+  // @LINE:17
+  class ReverseTodoListController(_prefix: => String) {
+
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:17
+    def getAll: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.TodoListController.getAll",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "todo"})
+        }
+      """
+    )
+  
+  }
 
   // @LINE:7
   class ReverseHomeController(_prefix: => String) {
