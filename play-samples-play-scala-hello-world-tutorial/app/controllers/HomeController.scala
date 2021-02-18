@@ -31,8 +31,13 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
   
 
-  // sleeepy test
+  // sleeepy test: tutorial part-1
   def getAll(): Action[AnyContent] = Action {
     NoContent
+  }
+
+  // sleepy test: adding view
+  def getTest() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.tutorial())
   }
 }
