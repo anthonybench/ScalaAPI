@@ -1,4 +1,10 @@
-# Play Hello World Web Tutorial for Scala
+# Project Inner README
+The first section is the stock README, followed by my cliffnotes for development in the second section.
+
+<br /><br />
+
+## **<u>Section 1</u>**
+### Play Hello World Web Tutorial for Scala
 
 To follow the steps in this tutorial, you will need the correct version of Java and sbt. The template requires:
 
@@ -22,7 +28,7 @@ If you do not have the required versions, follow these links to obtain them:
 * [Java SE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [sbt](http://www.scala-sbt.org/download.html)
 
-## Build and run the project
+### Build and run the project
 
 This example Play project was created from a seed template. It includes all Play components and an Akka HTTP server. The project is also configured with filters for Cross-Site Request Forgery (CSRF) protection and security headers.
 
@@ -36,14 +42,37 @@ To build and run the project:
 
 The Play application responds: `Welcome to the Hello World Tutorial!`
 
-<br><hr><br>
+<br /><br /><hr><br />
 
-## Run
+## **<u>Section 2</u>**
+
+### Controller Syntax
+```scala
+@Singleton
+class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+
+}
+```
+
+
+### Action Syntax
+```scala
+def getTest() = Action { implicit request: Request[AnyContent] =>
+    Ok(views.html.test())
+}
+```
+
+### Rout Syntax
+```
+GET     /test                       controllers.<controller_name>.<action>
+```
+
+### Run
 ```bash
 $ sbt run
 ```
 
-## View
+### View
 ```
 http://localhost:9000
 ```
