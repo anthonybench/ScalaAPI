@@ -1,0 +1,28 @@
+// Model
+case class Villager(
+    id: Long,
+    personality: Personality.Personality,
+    species: Species.Species,
+    birthday: String,
+    catchphrase: String,
+    hobby: Hobby.Hobby
+)
+
+// Controller
+@Singleton
+class VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+
+    private val villagers = new mutable.ListBuffer[Villager]()
+    villagers += Villager(1, Personality.lazyy, Species.horse, "May 1st", "clip clawp", Hobby.play)
+    villagers += Villager(2, Personality.peppy, Species.tiger, "August 27th", "growf", Hobby.fashion)
+
+    implicit val villagerJson = Json.format[Villager]
+
+    def getAll() = Action { implicit request: Request[AnyContent] =>
+        if (villagers.isEmpty) {
+            NoContent
+        } else {
+            Ok(Json.toJson(villagers))
+        }
+    }
+}
