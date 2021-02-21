@@ -45,27 +45,49 @@ The Play application responds: `Welcome to the Hello World Tutorial!`
 <br /><br /><hr><br />
 
 ## **<u>Section 2</u>**
-
-### Controller Syntax
+<!-- ================================================================= -->
+<!-- ================================================================= -->
+### Controllers
+`app/controllers/SleepyController.scala`
 ```scala
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
-
+class SleepyController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+    // actions and data structures
 }
 ```
 
-
-### Action Syntax
+### Actions
+`app/controllers/SleepyController.scala`
 ```scala
-def getTest() = Action { implicit request: Request[AnyContent] =>
-    Ok(views.html.test())
-}
+def getAll() = Action { implicit request: Request[AnyContent] =>
+        if (Villagers.isEmpty) {
+            NoContent
+        } else {
+            Ok(Json.toJason(todoList))
+        }
+    }
 ```
 
-### Rout Syntax
+### Models
+`app/models/Villager.scala`
+```scala
+case class Villager(
+    id: Long,
+    personality: personality,
+    species: species,
+    birthday: String,
+    catchphrase: String,
+    hobby: hobby
+)
+```
+
+### Routs
+`app/conf/routes`
 ```
 GET     /test                       controllers.<controller_name>.<action>
 ```
+
+<br /><br />
 
 ### Run
 ```bash
@@ -76,3 +98,5 @@ $ sbt run
 ```
 http://localhost:9000
 ```
+<!-- ================================================================= -->
+<!-- ================================================================= -->
