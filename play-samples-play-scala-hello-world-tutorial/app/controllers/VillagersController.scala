@@ -10,6 +10,7 @@ import play.api._
 import play.api.mvc._
 import scala.collection.mutable
 import play.api.libs.json._
+import models._
 
 // Controller
 @Singleton
