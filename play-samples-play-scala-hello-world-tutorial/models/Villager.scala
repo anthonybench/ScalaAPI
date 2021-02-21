@@ -1,3 +1,5 @@
+package models
+
 object personality extends Enumeration {
     type personality = Value
     val smug, snooty, cranky, lazyy,
