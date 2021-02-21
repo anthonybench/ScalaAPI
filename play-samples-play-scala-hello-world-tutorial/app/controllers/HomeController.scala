@@ -1,17 +1,18 @@
+//=====================================
+// Animal Crossing API Controller
+//      - Isaac Yep; CS 557
+//=====================================
 package controllers
-
+// Base Dependencies
 import javax.inject._
 import play.api._
 import play.api.mvc._
-
+// API Dependencies
 import scala.collection.mutable
 import play.api.libs.json._
 import models._
 
-/**
- * This controller creates an `Action` to handle HTTP requests to the
- * application's home page.
- */
+// Stock/Test Controller
 @Singleton
 class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
@@ -47,7 +48,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 }
 
 
-// Controller
+// API Controller
 @Singleton
 class VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
@@ -58,10 +59,10 @@ class VillagersController @Inject()(cc: ControllerComponents) extends AbstractCo
     implicit val villagerJson = Json.format[Villager]
 
     def getAll() = Action { implicit request: Request[AnyContent] =>
-        if (Villagers.isEmpty) {
+        if (villagers.isEmpty) {
             NoContent
         } else {
-            Ok(Json.toJason(villagers))
+            Ok(Json.toJson(villagers))
         }
     }
 }

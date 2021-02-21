@@ -1,13 +1,13 @@
 package models
 
-object personality extends Enumeration {
-    type personality = Value
+object Personality extends Enumeration {
+    type Personality = Value
     val smug, snooty, cranky, lazyy,
         peppy, normal, sisterly, jock = Value
 }
 
-object species extends Enumeration {
-    type species = Value
+object Species extends Enumeration {
+    type Species = Value
     val bird, squirrel, pig, gorilla,
         alligator, koala, eagle, anteater,
         bull, mouse, cat, horse,
@@ -18,18 +18,18 @@ object species extends Enumeration {
         ostrich, monkey = Value
 }
 
-object hobby extends Enumeration {
-    type hobby = Value
+object Hobby extends Enumeration {
+    type Hobby = Value
     val nature, fitness, play, education,
         fashion, music = Value
 }
 
 case class Villager(
     id: Long,
-    personality: personality,
-    species: species,
+    personality: Personality,
+    species: Species,
     birthday: String,
     catchphrase: String,
-    hobby: hobby
+    hobby: Hobby
 )
 
