@@ -7,22 +7,4 @@
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:33:12: not found: type Hobby[0m
 [0m[[0m[31merror[0m] [0m[0m    hobby: Hobby[0m
 [0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:30: not found: value lazyy[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:37: not found: value horse[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:69: package play is not a value[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:57:30: not found: value peppy[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:57:37: not found: value tiger[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:57:68: not found: value fashion[0m
-[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
