@@ -26,7 +26,7 @@ class VillagersController @Inject()(cc: ControllerComponents) extends AbstractCo
         if (Villagers.isEmpty) {
             NoContent
         } else {
-            Ok(Json.toJason(todoList))
+            Ok(Json.toJason(villagers))
         }
     }
 }

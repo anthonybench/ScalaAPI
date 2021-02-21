@@ -1,0 +1,139 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:3:14: object inject is not a member of package javax[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject._[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:4:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:5:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.mvc._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:12:66: not found: type AbstractController[0m
+[0m[[0m[31merror[0m] [0m[0mclass HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:11:2: trait Singleton is abstract; cannot be instantiated[0m
+[0m[[0m[31merror[0m] [0m[0m@Singleton[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:12:36: not found: type ControllerComponents[0m
+[0m[[0m[31merror[0m] [0m[0mclass HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:12:23: not found: type Inject[0m
+[0m[[0m[31merror[0m] [0m[0mclass HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:12:85: no arguments allowed for nullary constructor Object: ()Object[0m
+[0m[[0m[31merror[0m] [0m[0mclass HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:21:17: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def index() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:21:44: not found: type Request[0m
+[0m[[0m[31merror[0m] [0m[0m  def index() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:22:5: not found: value Ok[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.index())[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:22:8: not found: value views[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.index())[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:25:19: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def explore() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:25:46: not found: type Request[0m
+[0m[[0m[31merror[0m] [0m[0m  def explore() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:26:5: not found: value Ok[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.explore())[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:26:8: not found: value views[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.explore())[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:29:20: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def tutorial() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:29:47: not found: type Request[0m
+[0m[[0m[31merror[0m] [0m[0m  def tutorial() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:30:5: not found: value Ok[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.tutorial())[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:30:8: not found: value views[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.tutorial())[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:35:17: not found: type Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def getAll(): Action[AnyContent] = Action {[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:35:38: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def getAll(): Action[AnyContent] = Action {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:36:5: not found: value NoContent[0m
+[0m[[0m[31merror[0m] [0m[0m    NoContent[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:40:19: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m  def getTest() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:40:46: not found: type Request[0m
+[0m[[0m[31merror[0m] [0m[0m  def getTest() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:41:5: not found: value Ok[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.test())[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:41:8: not found: value views[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.test())[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:8:14: object inject is not a member of package javax[0m
+[0m[[0m[31merror[0m] [0m[0mimport javax.inject._[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:9:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:10:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.mvc._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:12:8: not found: object play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.api.libs.json._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:13:8: not found: object models[0m
+[0m[[0m[31merror[0m] [0m[0mimport models._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:17:71: not found: type AbstractController[0m
+[0m[[0m[31merror[0m] [0m[0mclass VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:16:2: trait Singleton is abstract; cannot be instantiated[0m
+[0m[[0m[31merror[0m] [0m[0m@Singleton[0m
+[0m[[0m[31merror[0m] [0m[0m ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:17:41: not found: type ControllerComponents[0m
+[0m[[0m[31merror[0m] [0m[0mclass VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:17:28: not found: type Inject[0m
+[0m[[0m[31merror[0m] [0m[0mclass VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:17:90: no arguments allowed for nullary constructor Object: ()Object[0m
+[0m[[0m[31merror[0m] [0m[0mclass VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:19:52: not found: type Villager[0m
+[0m[[0m[31merror[0m] [0m[0m    private val villagers = new mutable.ListBuffer[Villager]()[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:23:33: not found: value Json[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val villagerJson = Json.format[Villager][0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:23:45: not found: type Villager[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit val villagerJson = Json.format[Villager][0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:25:20: not found: value Action[0m
+[0m[[0m[31merror[0m] [0m[0m    def getAll() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:25:47: not found: type Request[0m
+[0m[[0m[31merror[0m] [0m[0m    def getAll() = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:26:13: not found: value Villagers[0m
+[0m[[0m[31merror[0m] [0m[0m        if (Villagers.isEmpty) {[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:27:13: not found: value NoContent[0m
+[0m[[0m[31merror[0m] [0m[0m            NoContent[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:29:13: not found: value Ok[0m
+[0m[[0m[31merror[0m] [0m[0m            Ok(Json.toJason(villagers))[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/VillagersController.scala:29:16: not found: value Json[0m
+[0m[[0m[31merror[0m] [0m[0m            Ok(Json.toJason(villagers))[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m46 errors found[0m
