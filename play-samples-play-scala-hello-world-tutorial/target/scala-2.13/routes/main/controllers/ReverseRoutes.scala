@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Wed Feb 17 19:36:32 PST 2021
+// @DATE:Sat Feb 20 17:30:34 PST 2021
 
 import play.api.mvc.Call
 
@@ -9,6 +9,21 @@ import _root_.controllers.Assets.Asset
 
 // @LINE:7
 package controllers {
+
+  // @LINE:22
+  class ReverseVillagersController(_prefix: => String) {
+    def _defaultPrefix: String = {
+      if (_prefix.endsWith("/")) "" else "/"
+    }
+
+  
+    // @LINE:22
+    def getAll(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "myvillagers")
+    }
+  
+  }
 
   // @LINE:7
   class ReverseHomeController(_prefix: => String) {

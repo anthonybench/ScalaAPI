@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Wed Feb 17 19:36:32 PST 2021
+// @DATE:Sat Feb 20 17:30:34 PST 2021
 
 
 package router {
