@@ -1,9 +1,30 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:54:52: not found: type Villager[0m
-[0m[[0m[31merror[0m] [0m[0m    private val villagers = new mutable.ListBuffer[Villager]()[0m
-[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:58:45: not found: type Villager[0m
-[0m[[0m[31merror[0m] [0m[0m    implicit val villagerJson = Json.format[Villager][0m
-[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:29:18: not found: type personality[0m
+[0m[[0m[31merror[0m] [0m[0m    personality: personality,[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:30:14: not found: type species[0m
+[0m[[0m[31merror[0m] [0m[0m    species: species,[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:33:12: not found: type hobby[0m
+[0m[[0m[31merror[0m] [0m[0m    hobby: hobby[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:55:30: not found: value lazyy[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:55:37: not found: value horse[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:55:69: package play is not a value[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(1, lazyy, horse, "May 1st", "clip clawp", play)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:30: not found: value peppy[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:37: not found: value tiger[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:56:68: not found: value fashion[0m
+[0m[[0m[31merror[0m] [0m[0m    villagers += Villager(2, peppy, tiger, "August 27th", "growf", fashion)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:61:13: not found: value Villagers[0m
 [0m[[0m[31merror[0m] [0m[0m        if (Villagers.isEmpty) {[0m
 [0m[[0m[31merror[0m] [0m[0m            ^[0m
@@ -11,4 +32,4 @@
 [0m[[0m[31merror[0m] [0m[0mdid you mean toJson?[0m
 [0m[[0m[31merror[0m] [0m[0m            Ok(Json.toJason(villagers))[0m
 [0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m11 errors found[0m
