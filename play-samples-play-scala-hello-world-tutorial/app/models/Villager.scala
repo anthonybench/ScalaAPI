@@ -69,10 +69,10 @@ object Hobby extends Enumeration {
 
 case class Villager(
     id: Long,
-    personality: Personality.Personality, // Personality.Personality
-    species: Species.Species, // Species.Species
+    personality: Personality, // Enum
+    species: Species, // Enum
     birthday: String,
     catchphrase: String,
-    hobby: Hobby.Hobby, // Hobby.Hobby
+    hobby: Hobby, // Enum
 )
 
