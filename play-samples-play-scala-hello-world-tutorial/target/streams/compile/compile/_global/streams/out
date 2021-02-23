@@ -1,7 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:59:44: No instance of play.api.libs.json.Format is available for scala.Enumeration.Value, scala.Enumeration.Value, scala.Enumeration.Value in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
-[0m[[0m[31merror[0m] [0m[0m    implicit val villagerJson = Json.format[Villager][0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:65:27: No Json serializer found for type scala.collection.mutable.ListBuffer[models.Villager]. Try to implement an implicit Writes or Format for this type.[0m
-[0m[[0m[31merror[0m] [0m[0m            Ok(Json.toJson(villagers))[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:72:30: type Personality is not a member of object models.Personality[0m
+[0m[[0m[31merror[0m] [0m[0m    personality: Personality.Personality, // Personality.Personality[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:73:22: type Species is not a member of object models.Species[0m
+[0m[[0m[31merror[0m] [0m[0m    species: Species.Species, // Species.Species[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:76:18: type Hobby is not a member of object models.Hobby[0m
+[0m[[0m[31merror[0m] [0m[0m    hobby: Hobby.Hobby, // Hobby.Hobby[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
