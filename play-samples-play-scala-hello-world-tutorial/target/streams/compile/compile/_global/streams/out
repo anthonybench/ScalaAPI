@@ -1,10 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:72:30: type Personality is not a member of object models.Personality[0m
-[0m[[0m[31merror[0m] [0m[0m    personality: Personality.Personality, // Personality.Personality[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:73:22: type Species is not a member of object models.Species[0m
-[0m[[0m[31merror[0m] [0m[0m    species: Species.Species, // Species.Species[0m
-[0m[[0m[31merror[0m] [0m[0m                     ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:76:18: type Hobby is not a member of object models.Hobby[0m
-[0m[[0m[31merror[0m] [0m[0m    hobby: Hobby.Hobby, // Hobby.Hobby[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:72:18: not found: type Personality[0m
+[0m[[0m[31merror[0m] [0m[0m    personality: Personality, // Enum[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:73:14: not found: type Species[0m
+[0m[[0m[31merror[0m] [0m[0m    species: Species, // Enum[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/models/Villager.scala:76:12: not found: type Hobby[0m
+[0m[[0m[31merror[0m] [0m[0m    hobby: Hobby, // Enum[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
 [0m[[0m[31merror[0m] [0m[0mthree errors found[0m
