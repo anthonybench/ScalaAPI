@@ -48,13 +48,12 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 }
 
 
-// API Controller
-@Singleton
+// API Controller@Singleton
 class VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
     private val villagers = new mutable.ListBuffer[Villager]()
-    villagers += Villager(1, "lazy", "horse", "May 1st", "clip clawp", "play")
-    villagers += Villager(2, "peppy", "tiger", "August 27th", "growf", "fashion")
+    villagers += Villager(1, Personality.lazyy, Species.horse, "May 1st", "clip clawp", Hobby.play)
+    villagers += Villager(2, Personality.peppy, Species.tiger, "August 27th", "growf", Hobby.fashion)
 
     implicit val villagerJson = Json.format[Villager]
 
