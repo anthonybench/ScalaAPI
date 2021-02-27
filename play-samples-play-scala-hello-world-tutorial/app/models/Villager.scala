@@ -1,9 +1,6 @@
 package models
 
 object Personality extends Enumeration {
-    // type Personality = Value
-    // val smug, snooty, cranky, lazyy,
-    //     peppy, normal, sisterly, jock = Value
     val smug = Value("smug")
     val snooty = Value("snooty")
     val cranky = Value("cranky")
@@ -15,15 +12,6 @@ object Personality extends Enumeration {
 }
 
 object Species extends Enumeration {
-    // type Species = Value
-    // val bird, squirrel, pig, gorilla,
-    //     alligator, koala, eagle, anteater,
-    //     bull, mouse, cat, horse,
-    //     hamster, kangaroo, wolf, penguin,
-    //     chicken, tiger, deer, sheep,
-    //     cub, dog, bear, hippo,
-    //     elephant, duck, goat, rabbit,
-    //     ostrich, monkey = Value
     val bird = Value("bird")
     val squirrel = Value("squirrel")
     val pig = Value("pig")
@@ -54,12 +42,12 @@ object Species extends Enumeration {
     val rabbit = Value("rabbit")
     val ostrich = Value("ostrich")
     val monkey = Value("monkey")
+    val lion = Value("lion")
+    val cow = Value("cow")
+    val octopus = Value("octopus")
 }
 
 object Hobby extends Enumeration {
-    // type Hobby = Value
-    // val nature, fitness, play, education,
-    //     fashion, music = Value
     val nature = Value("nature")
     val fitness = Value("play")
     val play = Value("education")
@@ -69,10 +57,10 @@ object Hobby extends Enumeration {
 
 case class Villager(
     id: Long,
+    name: String,
     personality: String, // Enum
     species: String, // Enum
     birthday: String,
     catchphrase: String,
     hobby: String, // Enum
 )
-

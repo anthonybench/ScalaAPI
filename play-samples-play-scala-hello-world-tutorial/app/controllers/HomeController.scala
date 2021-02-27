@@ -51,17 +51,33 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 // API Controller@Singleton
 class VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
-    private val villagers = new mutable.ListBuffer[Villager]()
-    villagers += Villager(1, Personality.lazyy.toString, Species.horse.toString, "May 1st", "clip clawp", Hobby.play.toString)
-    villagers += Villager(2, Personality.peppy.toString, Species.tiger.toString, "August 27th", "growf", Hobby.fashion.toString)
+  // Villagers Start //
+  private val villagers = new mutable.ListBuffer[Villager]()
+  //~
+  villagers += Villager(1, "Clyde", Personality.lazyy.toString, Species.horse.toString, "May 1st", "clip clawp", Hobby.play.toString)
+  villagers += Villager(2, "Bangle", Personality.peppy.toString, Species.tiger.toString, "August 27th", "growf", Hobby.fashion.toString)
+  villagers += Villager(3, "Buzz", Personality.cranky.toString, Species.eagle.toString, "December 7th", "captain", Hobby.nature.toString)
+  villagers += Villager(4, "Tank", Personality.jock.toString, Species.rhino.toString, "May 6th", "kerPOW", Hobby.fitness.toString)
+  villagers += Villager(5, "Sylvia", Personality.sistere.toString, Species.kangaroo.toString, "May 3rd", "boing", Hobby.music.toString)
+  villagers += Villager(6, "Rex", Personality.lazyy.toString, Species.lion.toString, "July 24th", "cool cat", Hobby.nature.toString)
+  villagers += Villager(7, "Roscoe", Personality.cranky.toString, Species.horse.toString, "June 16th", "nay", Hobby.music.toString)
+  villagers += Villager(8, "Rowan", Personality.jock.toString, Species.tiger.toString, "August 26th", "mango", Hobby.fitness.toString)
+  villagers += Villager(9, "Norma", Personality.normal.toString, Species.cow.toString, "September 20th", "hoof hoo", Hobby.nature.toString)
+  villagers += Villager(10, "Marina", Personality.normal.toString, Species.octopus.toString, "June 26th", "blurp", Hobby.music.toString)
+  villagers += Villager(11, "Billy", Personality.jock.toString, Species.goat.toString, "March 25th", "dagnaabit", Hobby.play.toString)
+  villagers += Villager(12, "Beau", Personality.lazyy.toString, Species.deer.toString, "April 5th", "saltlick", Hobby.nature.toString)
+  villagers += Villager(13, "Ankha", Personality.snooty.toString, Species.cat.toString, "September 22nd", "me meow", Hobby.nature.toString)
+  villagers += Villager(14, "Lucky", Personality.lazyy.toString, Species.dog.toString, "November 4th", "rrr-owch", Hobby.play.toString)
+  villagers += Villager(15, "Broffina", Personality.snooty.toString, Species.chicken.toString, "October 24th", "cluckadoo", Hobby.music.toString)
+  //~
+  implicit val villagerJson = Json.format[Villager]
+  // Villagers End //
 
-    implicit val villagerJson = Json.format[Villager]
-
-    def getAll() = Action { implicit request: Request[AnyContent] =>
-        if (villagers.isEmpty) {
-            NoContent
-        } else {
-            Ok(Json.toJson(villagers))
-        }
-    }
+  def getAll() = Action { implicit request: Request[AnyContent] =>
+      if (villagers.isEmpty) {
+        NoContent
+      } else {
+        Ok(Json.toJson(villagers))
+      }
+  }
 }

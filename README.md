@@ -6,7 +6,11 @@
 ### Welcome to ScalaAPI!
 <hr>
 
-This ~ooo~
+This API delivers game information for ***Animal Crossing; New Horizons***, organized into various endpoints. If you're unfamiliar, it's official page can be [found here](https://www.animal-crossing.com/new-horizons/).
+
+As brief synopsis, you play as a new '*villager*' of an island settlement with a name of your choosing. The game's goals are nebulous by design, and features a universe of animal characters that can also occupy your island as residents, or manage various stores/public services on your island.
+
+A big mechanic of the game are the other potential villagers, which you can have up to 10 of (not including yourself) on your island at a time. You can explore other islands to recruit new villagers, allow current villagers to move out, or simply let the game's <abbr title="Random Number Generator">rng</abbr> deliver new villagers at random to occupy vacant spots.
 
 <br />
 
@@ -26,14 +30,50 @@ This ~ooo~
 ### Get Started 🚀
 <hr>
 
-~ooo~
+Ensure you have the **Java SDK 1.8** or higher with:
+```bash
+$ java -version
+```
+and also ensure that you have the **SBT Java build system 1.3.4** with:
+```bash
+$ sbt sbtVersion
+```
+Clone this project into a linux environment, and deploy with:
+```bash
+$ sbt run
+```
+and that's it! consult the next section to interact with it!
 
 <br />
 
 ### Usage ⚙
 <hr>
 
-~ooo~
+As this API was built expressly for the purpose of the author famliarizing himself with *Scala*, this project was only intended to be served locally. This application is set to serve on port `9000`, thus while serving, all of the routes listed below are accessible from the `http://localhost:9000` base address.
+
+#### **`/myvillagers`**
+*returns all data of all villagers*
+```yaml
+{ id: string
+  name: string
+  personality: string
+  species: string
+  birthday: string
+  catchphrase: string
+  hobby: string }
+```
+
+#### **`/helloworld`**
+*something*
+```yaml
+{  }
+```
+
+#### **`/helloworld`**
+*something*
+```yaml
+{  }
+```
 
 <br />
 
