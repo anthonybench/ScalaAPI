@@ -1,7 +1,10 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:58:44: No instance of play.api.libs.json.Format is available for scala.Enumeration.Value, scala.Enumeration.Value, scala.Enumeration.Value in the implicit scope (Hint: if declared in the same file, make sure it's declared before)[0m
-[0m[[0m[31merror[0m] [0m[0m    implicit val villagerJson = Json.format[Villager][0m
-[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:64:27: No Json serializer found for type scala.collection.mutable.ListBuffer[models.Villager]. Try to implement an implicit Writes or Format for this type.[0m
-[0m[[0m[31merror[0m] [0m[0m            Ok(Json.toJson(villagers))[0m
-[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:60:71: value rhino is not a member of object models.Species[0m
+[0m[[0m[31merror[0m] [0m[0m Note: implicit value villagerJson is not applicable here because it comes after the application point and it lacks an explicit result type[0m
+[0m[[0m[31merror[0m] [0m[0m  villagers += Villager(4, "Tank", Personality.jock.toString, Species.rhino.toString, "May 6th", "kerPOW", Hobby.fitness.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:61:50: value sistere is not a member of object models.Personality[0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean sisterly?[0m
+[0m[[0m[31merror[0m] [0m[0m Note: implicit value villagerJson is not applicable here because it comes after the application point and it lacks an explicit result type[0m
+[0m[[0m[31merror[0m] [0m[0m  villagers += Villager(5, "Sylvia", Personality.sistere.toString, Species.kangaroo.toString, "May 3rd", "boing", Hobby.music.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
 [0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
