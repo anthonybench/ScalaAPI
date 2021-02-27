@@ -58,7 +58,7 @@ class VillagersController @Inject()(cc: ControllerComponents) extends AbstractCo
   villagers += Villager(2, "Bangle", Personality.peppy.toString, Species.tiger.toString, "August 27th", "growf", Hobby.fashion.toString)
   villagers += Villager(3, "Buzz", Personality.cranky.toString, Species.eagle.toString, "December 7th", "captain", Hobby.nature.toString)
   villagers += Villager(4, "Tank", Personality.jock.toString, Species.rhino.toString, "May 6th", "kerPOW", Hobby.fitness.toString)
-  villagers += Villager(5, "Sylvia", Personality.sistere.toString, Species.kangaroo.toString, "May 3rd", "boing", Hobby.music.toString)
+  villagers += Villager(5, "Sylvia", Personality.sisterly.toString, Species.kangaroo.toString, "May 3rd", "boing", Hobby.music.toString)
   villagers += Villager(6, "Rex", Personality.lazyy.toString, Species.lion.toString, "July 24th", "cool cat", Hobby.nature.toString)
   villagers += Villager(7, "Roscoe", Personality.cranky.toString, Species.horse.toString, "June 16th", "nay", Hobby.music.toString)
   villagers += Villager(8, "Rowan", Personality.jock.toString, Species.tiger.toString, "August 26th", "mango", Hobby.fitness.toString)

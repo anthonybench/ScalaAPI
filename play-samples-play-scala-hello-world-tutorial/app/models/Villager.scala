@@ -45,6 +45,7 @@ object Species extends Enumeration {
     val lion = Value("lion")
     val cow = Value("cow")
     val octopus = Value("octopus")
+    val rhino = Value("rhino")
 }
 
 object Hobby extends Enumeration {
