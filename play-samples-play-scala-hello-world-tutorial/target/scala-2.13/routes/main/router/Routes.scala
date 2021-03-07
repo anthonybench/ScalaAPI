@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Sat Feb 20 17:30:34 PST 2021
+// @DATE:Sun Mar 07 13:50:33 PST 2021
 
 package router
 
@@ -50,6 +50,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """todo""", """controllers.HomeController.getAll"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """test""", """controllers.HomeController.getTest"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """myvillagers""", """controllers.VillagersController.getAll"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """villager/""" + "$" + """id<[^/]+>""", """controllers.VillagersController.getOne(id:Long)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -183,6 +184,24 @@ class Routes(
     )
   )
 
+  // @LINE:23
+  private[this] lazy val controllers_VillagersController_getOne7_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("villager/"), DynamicPart("id", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_VillagersController_getOne7_invoker = createInvoker(
+    VillagersController_0.getOne(fakeValue[Long]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.VillagersController",
+      "getOne",
+      Seq(classOf[Long]),
+      "GET",
+      this.prefix + """villager/""" + "$" + """id<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -226,6 +245,12 @@ class Routes(
     case controllers_VillagersController_getAll6_route(params@_) =>
       call { 
         controllers_VillagersController_getAll6_invoker.call(VillagersController_0.getAll)
+      }
+  
+    // @LINE:23
+    case controllers_VillagersController_getOne7_route(params@_) =>
+      call(params.fromPath[Long]("id", None)) { (id) =>
+        controllers_VillagersController_getOne7_invoker.call(VillagersController_0.getOne(id))
       }
   }
 }

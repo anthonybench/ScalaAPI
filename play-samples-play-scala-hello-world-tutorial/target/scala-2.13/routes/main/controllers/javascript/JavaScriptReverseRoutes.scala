@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Sat Feb 20 17:30:34 PST 2021
+// @DATE:Sun Mar 07 13:50:33 PST 2021
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -24,6 +24,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "myvillagers"})
+        }
+      """
+    )
+  
+    // @LINE:23
+    def getOne: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.VillagersController.getOne",
+      """
+        function(id0) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "villager/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[Long]].javascriptUnbind + """)("id", id0))})
         }
       """
     )

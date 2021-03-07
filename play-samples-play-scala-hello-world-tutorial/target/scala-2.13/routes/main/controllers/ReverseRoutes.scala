@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Sat Feb 20 17:30:34 PST 2021
+// @DATE:Sun Mar 07 13:50:33 PST 2021
 
 import play.api.mvc.Call
 
@@ -21,6 +21,12 @@ package controllers {
     def getAll(): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "myvillagers")
+    }
+  
+    // @LINE:23
+    def getOne(id:Long): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "villager/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[Long]].unbind("id", id)))
     }
   
   }

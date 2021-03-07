@@ -1,10 +1,30 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:60:71: value rhino is not a member of object models.Species[0m
-[0m[[0m[31merror[0m] [0m[0m Note: implicit value villagerJson is not applicable here because it comes after the application point and it lacks an explicit result type[0m
-[0m[[0m[31merror[0m] [0m[0m  villagers += Villager(4, "Tank", Personality.jock.toString, Species.rhino.toString, "May 6th", "kerPOW", Hobby.fitness.toString)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                      ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:61:50: value sistere is not a member of object models.Personality[0m
-[0m[[0m[31merror[0m] [0m[0mdid you mean sisterly?[0m
-[0m[[0m[31merror[0m] [0m[0m Note: implicit value villagerJson is not applicable here because it comes after the application point and it lacks an explicit result type[0m
-[0m[[0m[31merror[0m] [0m[0m  villagers += Villager(5, "Sylvia", Personality.sistere.toString, Species.kangaroo.toString, "May 3rd", "boing", Hobby.music.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:14:8: not found: object scalaz[0m
+[0m[[0m[31merror[0m] [0m[0mimport scalaz._, Scalaz._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:14:18: not found: object Scalaz[0m
+[0m[[0m[31merror[0m] [0m[0mimport scalaz._, Scalaz._[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:89:50: not found: type \/[0m
+[0m[[0m[31merror[0m] [0m[0m    def findVillager(villagerId:Long): Exception \/ Villager = {[0m
 [0m[[0m[31merror[0m] [0m[0m                                                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:90:28: not found: value \/[0m
+[0m[[0m[31merror[0m] [0m[0m      if (villagerId > 15) \/.left(new Exception("ID out of range!"))[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:93:9: not found: value villagerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m        villagerMatch = villagers.find(v => v.id == villagerId)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:26: not found: value viallgerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += viallgerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:9: not found: value \/[0m
+[0m[[0m[31merror[0m] [0m[0m        \/.right(villagerMatch)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:18: not found: value villagerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m        \/.right(villagerMatch)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:100:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
