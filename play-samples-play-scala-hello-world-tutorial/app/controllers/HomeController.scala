@@ -11,6 +11,7 @@ import play.api.mvc._
 import scala.collection.mutable
 import play.api.libs.json._
 import models._
+import scalaz._, Scalaz._
 
 // Stock/Test Controller
 @Singleton
@@ -73,11 +74,28 @@ class VillagersController @Inject()(cc: ControllerComponents) extends AbstractCo
   implicit val villagerJson = Json.format[Villager]
   // Villagers End //
 
+  // localhost:9000/myvillagers
   def getAll() = Action { implicit request: Request[AnyContent] =>
       if (villagers.isEmpty) {
         NoContent
       } else {
         Ok(Json.toJson(villagers))
       }
+  }
+
+  // localhost:9000/villager
+  def getOne( id:Long ) = Action { implicit request: Request[AnyContent] =>
+    // Disjunction Utility
+    def findVillager(villagerId:Long): Exception \/ Villager = {
+      if (villagerId > 15) \/.left(new Exception("ID out of range!"))
+      else {
+        val foundVillager = new mutable.ListBuffer[Villager]()
+        villagerMatch = villagers.find(v => v.id == villagerId)
+        foundVillager += viallgerMatch
+        Ok(Json.toJson(foundVillager))
+        \/.right(villagerMatch)
+      }
+    }
+
   }
 }

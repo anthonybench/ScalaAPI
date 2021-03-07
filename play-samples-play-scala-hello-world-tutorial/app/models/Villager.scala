@@ -1,5 +1,6 @@
 package models
 
+//Personality.val.toString
 object Personality extends Enumeration {
     val smug = Value("smug")
     val snooty = Value("snooty")
@@ -11,6 +12,7 @@ object Personality extends Enumeration {
     val jock = Value("jock")
 }
 
+//Species.val.toString
 object Species extends Enumeration {
     val bird = Value("bird")
     val squirrel = Value("squirrel")
@@ -48,6 +50,7 @@ object Species extends Enumeration {
     val rhino = Value("rhino")
 }
 
+//Hobby.val.toString
 object Hobby extends Enumeration {
     val nature = Value("nature")
     val fitness = Value("play")
