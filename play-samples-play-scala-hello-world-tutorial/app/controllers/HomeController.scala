@@ -95,7 +95,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
     }
     
     val foundVillager = new mutable.ListBuffer[Villager]()
-    foundVillager += villagers.filter(v => v.id == id)
+    foundVillager += villagers.filter(v => v.id == id).head
 
     Ok(Json.toJson(foundVillager))
 
