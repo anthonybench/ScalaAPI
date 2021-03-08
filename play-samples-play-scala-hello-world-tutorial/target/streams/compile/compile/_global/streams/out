@@ -1,6 +1,25 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:36: value villagerMatch is not a member of object models.Villager[0m
-[0m[[0m[31merror[0m] [0m[0m        foundVillager += (Villager)villagerMatch[0m
-[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:49: value id is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0mdid you mean zip?[0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:67: value name is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:87: value personality is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:114: value species is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:137: value birthday is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:161: value catchphrase is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:188: value hobby is not a member of Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                                                                                                           ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:18: type mismatch;[0m
 [0m[[0m[31merror[0m] [0m[0m found   : Option[models.Villager][0m
 [0m[[0m[31merror[0m] [0m[0m required: models.Villager[0m
@@ -11,4 +30,4 @@
 [0m[[0m[31merror[0m] [0m[0m required: play.api.mvc.Result[0m
 [0m[[0m[31merror[0m] [0m[0m  }[0m
 [0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
