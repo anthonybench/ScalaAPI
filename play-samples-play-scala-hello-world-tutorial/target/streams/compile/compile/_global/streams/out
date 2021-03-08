@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:93:9: not found: value villagerMatch[0m
-[0m[[0m[31merror[0m] [0m[0m        villagerMatch = villagers.find(v => v.id == villagerId)[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:93:18: value villagerMatch is not a member of object models.Villager[0m
+[0m[[0m[31merror[0m] [0m[0m        Villager villagerMatch = villagers.find(v => v.id == villagerId)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:26: not found: value viallgerMatch[0m
 [0m[[0m[31merror[0m] [0m[0m        foundVillager += viallgerMatch[0m
 [0m[[0m[31merror[0m] [0m[0m                         ^[0m
