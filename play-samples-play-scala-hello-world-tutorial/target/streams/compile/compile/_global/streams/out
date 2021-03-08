@@ -1,6 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:26: not found: value viallgerMatch[0m
-[0m[[0m[31merror[0m] [0m[0m        foundVillager += viallgerMatch[0m
-[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:36: value villagerMatch is not a member of object models.Villager[0m
+[0m[[0m[31merror[0m] [0m[0m        foundVillager += (Villager)villagerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:18: type mismatch;[0m
 [0m[[0m[31merror[0m] [0m[0m found   : Option[models.Villager][0m
 [0m[[0m[31merror[0m] [0m[0m required: models.Villager[0m
