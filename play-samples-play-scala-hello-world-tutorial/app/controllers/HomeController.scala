@@ -91,7 +91,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
       else {
         val foundVillager = new mutable.ListBuffer[Villager]()
         val villagerMatch = villagers.find(v => v.id == villagerId)
-        foundVillager += (Villager)villagerMatch
+        foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)
         Ok(Json.toJson(foundVillager))
         \/.right(villagerMatch)
       }
