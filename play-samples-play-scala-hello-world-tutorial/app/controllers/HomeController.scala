@@ -15,7 +15,7 @@ import scalaz._, Scalaz._
 
 // Stock/Test Controller
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class HomeController @javax.inject.Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   /**
    * Create an Action to render an HTML page.
@@ -50,7 +50,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
 
 // API Controller@Singleton
-class VillagersController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+class VillagersController @javax.inject.Inject()(cc: ControllerComponents) extends AbstractController(cc) {
 
   // Villagers Start //
   private val villagers = new mutable.ListBuffer[Villager]()
