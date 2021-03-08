@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:98:30: not enough arguments for method apply: (id: Long, name: String, personality: String, species: String, birthday: String, catchphrase: String, hobby: String)models.Villager in object Villager.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters name, personality, species...[0m
-[0m[[0m[31merror[0m] [0m[0m    foundVillager += Villager(findVillager(id))[0m
-[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:99:19: No Json serializer found for type scala.collection.mutable.ListBuffer[Exception \/ models.Villager]. Try to implement an implicit Writes or Format for this type.[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(Json.toJson(foundVillager))[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
