@@ -86,18 +86,17 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
   // localhost:9000/villager
   def getOne( id:Long ) = Action { implicit request: Request[AnyContent] =>
     // Disjunction Utility
-    def findVillager(villagerId:Long): Exception \/ mutable.ListBuffer[Villager] = {
+    def findVillager(villagerId:Long): Exception \/ Villager = {
       if (villagerId > 15) \/.left(new Exception("ID out of range!"))
       else {
-        val foundVillager = new mutable.ListBuffer[Villager]()
         val villagerMatch = villagers.find(v => v.id == villagerId).head
-        foundVillager += villagerMatch
-        
-        \/.right(foundVillager)
+        \/.right(villagerMatch)
       }
     }
     
-    Ok(Json.toJson(findVillager(id)))
+    val foundVillager = new mutable.ListBuffer[Villager]()
+    foundVillager += Villager(findVillager(id))
+    Ok(Json.toJson(foundVillager))
 
   }
 }
