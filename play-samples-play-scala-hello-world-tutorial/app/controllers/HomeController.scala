@@ -90,7 +90,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
       if (villagerId > 15) \/.left(new Exception("ID out of range!"))
       else {
         val foundVillager = new mutable.ListBuffer[Villager]()
-        val villagerMatch = villagers.find(v => v.id == villagerId)
+        val villagerMatch = villagers.find(v => v.id == villagerId).last()
         foundVillager += Villager(villagerMatch.id, villagerMatch.name, villagerMatch.personality, villagerMatch.species, villagerMatch.birthday, villagerMatch.catchphrase, villagerMatch.hobby)
         Ok(Json.toJson(foundVillager))
         \/.right(villagerMatch)
