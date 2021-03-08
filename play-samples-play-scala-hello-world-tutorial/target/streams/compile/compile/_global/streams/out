@@ -1,10 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:93:18: value villagerMatch is not a member of object models.Villager[0m
-[0m[[0m[31merror[0m] [0m[0m        Villager villagerMatch = villagers.find(v => v.id == villagerId)[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:94:26: not found: value viallgerMatch[0m
 [0m[[0m[31merror[0m] [0m[0m        foundVillager += viallgerMatch[0m
 [0m[[0m[31merror[0m] [0m[0m                         ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:18: not found: value villagerMatch[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:96:18: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Option[models.Villager][0m
+[0m[[0m[31merror[0m] [0m[0m required: models.Villager[0m
 [0m[[0m[31merror[0m] [0m[0m        \/.right(villagerMatch)[0m
 [0m[[0m[31merror[0m] [0m[0m                 ^[0m
 [0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:100:3: type mismatch;[0m
@@ -12,4 +11,4 @@
 [0m[[0m[31merror[0m] [0m[0m required: play.api.mvc.Result[0m
 [0m[[0m[31merror[0m] [0m[0m  }[0m
 [0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
