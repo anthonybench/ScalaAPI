@@ -1,5 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:98:56: value heaad is not a member of scala.collection.mutable.ListBuffer[models.Villager][0m
-[0m[[0m[31merror[0m] [0m[0mdid you mean head?[0m
-[0m[[0m[31merror[0m] [0m[0m    foundVillager += villagers.filter(v => v.id == id).heaad[0m
-[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/app/controllers/HomeController.scala:109:16: a pure expression does nothing in statement position; multiline expressions might require enclosing parentheses[0m
+[0m[[0m[31merror[0m] [0m[0m    villagerMap: scala.collection.immutable.Map[String, List[Int]][0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/sleepyboy/ScalaAPI/play-samples-play-scala-hello-world-tutorial/conf/routes
-// @DATE:Sun Mar 07 13:50:33 PST 2021
+// @DATE:Thu Mar 11 20:04:54 PST 2021
 
 package router
 
@@ -51,6 +51,7 @@ class Routes(
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """test""", """controllers.HomeController.getTest"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """myvillagers""", """controllers.VillagersController.getAll"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """villager/""" + "$" + """id<[^/]+>""", """controllers.VillagersController.getOne(id:Long)"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """villagertype/""" + "$" + """animal<[^/]+>""", """controllers.VillagersController.getAnimals(animal:String)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -202,6 +203,24 @@ class Routes(
     )
   )
 
+  // @LINE:24
+  private[this] lazy val controllers_VillagersController_getAnimals8_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("villagertype/"), DynamicPart("animal", """[^/]+""",true)))
+  )
+  private[this] lazy val controllers_VillagersController_getAnimals8_invoker = createInvoker(
+    VillagersController_0.getAnimals(fakeValue[String]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.VillagersController",
+      "getAnimals",
+      Seq(classOf[String]),
+      "GET",
+      this.prefix + """villagertype/""" + "$" + """animal<[^/]+>""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -251,6 +270,12 @@ class Routes(
     case controllers_VillagersController_getOne7_route(params@_) =>
       call(params.fromPath[Long]("id", None)) { (id) =>
         controllers_VillagersController_getOne7_invoker.call(VillagersController_0.getOne(id))
+      }
+  
+    // @LINE:24
+    case controllers_VillagersController_getAnimals8_route(params@_) =>
+      call(params.fromPath[String]("animal", None)) { (animal) =>
+        controllers_VillagersController_getAnimals8_invoker.call(VillagersController_0.getAnimals(animal))
       }
   }
 }

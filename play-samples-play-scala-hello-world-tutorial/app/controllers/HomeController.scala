@@ -71,7 +71,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
   villagers += Villager(13, "Ankha", Personality.snooty.toString, Species.cat.toString, "September 22nd", "me meow", Hobby.nature.toString)
   villagers += Villager(14, "Lucky", Personality.lazyy.toString, Species.dog.toString, "November 4th", "rrr-owch", Hobby.play.toString)
   villagers += Villager(15, "Broffina", Personality.snooty.toString, Species.chicken.toString, "October 24th", "cluckadoo", Hobby.music.toString)
-  villagers += Villager(16, "Cleo", Perosnality.snooty.toString, Species.horse.toString, "February 9th", "sugar", Hobby.education.toString)
+  villagers += Villager(16, "Cleo", Personality.snooty.toString, Species.horse.toString, "February 9th", "sugar", Hobby.education.toString)
   //~
   implicit val villagerJson = Json.format[Villager]
   // Villagers End //
@@ -106,7 +106,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
   // localhost:9000/villagertype/:animal
   def getAnimals( animal:String ) = Action { implicit request: Request[AnyContent] =>
     // Monad Exercise : Container of villagers using lists and monads
-    villagerMap: scala.collection.immutable.Map[String, List[Int]]
+    //villagerMap: scala.collection.immutable.Map[String, List[Int]]
     val villagerMap = Map("horse" -> List(1,7,16),
                           "tiger" -> List(2,8),
                           "eagle" -> List(3),
@@ -121,8 +121,8 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
                           "dog" -> List(14),
                           "chicken" -> List(15))
 
-    val foundVillagers = new mutable.ListBuffer[Villager]()
-    foundVillagers += villagers.filter(v => (villagerMap[animal]).contains(v.id))
+    //val foundVillagers = new mutable.ListBuffer[Villager]()
+    val foundVillagers = villagers.filter(v => villagerMap(animal).contains(v.id))
     Ok(Json.toJson(foundVillagers))
   }
 }

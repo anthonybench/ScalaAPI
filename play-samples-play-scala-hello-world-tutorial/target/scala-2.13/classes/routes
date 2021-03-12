@@ -21,3 +21,4 @@ GET     /test                       controllers.HomeController.getTest
 # Sleepy Routes
 GET     /myvillagers                controllers.VillagersController.getAll
 GET     /villager/:id               controllers.VillagersController.getOne(id: Long)
+GET     /villagertype/:animal         controllers.VillagersController.getAnimals(animal: String)

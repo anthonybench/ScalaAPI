@@ -53,8 +53,9 @@ object Species extends Enumeration {
 //Hobby.val.toString
 object Hobby extends Enumeration {
     val nature = Value("nature")
-    val fitness = Value("play")
-    val play = Value("education")
+    val fitness = Value("fitness")
+    val play = Value("play")
+    val education = Value("education")
     val fashion = Value("fasion")
     val music = Value("music")
 }
