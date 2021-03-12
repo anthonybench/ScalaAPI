@@ -103,7 +103,7 @@ class VillagersController @javax.inject.Inject()(cc: ControllerComponents) exten
 
   }
 
-  // localhost:9000/:name
+  // localhost:9000/villagertype/:animal
   def getAnimals( animal:String ) = Action { implicit request: Request[AnyContent] =>
     // Monad Exercise : Container of villagers using lists and monads
     villagerMap: scala.collection.immutable.Map[String, List[Int]]
