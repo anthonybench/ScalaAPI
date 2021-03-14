@@ -63,16 +63,28 @@ As this API was built expressly for the purpose of the author famliarizing himse
   hobby: string }
 ```
 
-#### **`/helloworld`**
-*something*
+#### **`/villager/:id`**
+*returns a single villager by id*
 ```yaml
-{  }
+{ id: string
+  name: string
+  personality: string
+  species: string
+  birthday: string
+  catchphrase: string
+  hobby: string }
 ```
 
-#### **`/helloworld`**
-*something*
+#### **`/villagertype/:animal`**
+*returns all villagers of a species*
 ```yaml
-{  }
+{ id: string
+  name: string
+  personality: string
+  species: string
+  birthday: string
+  catchphrase: string
+  hobby: string }
 ```
 
 <br />
